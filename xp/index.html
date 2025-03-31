@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em Janelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Buscar vídeos..." onkeyup="filterVideos()">
+    </div>
+
+    <div class="video-container">
+
+        <!-- Janela do Vídeo 1 -->
+        <div class="video-window" id="video1-window">
+            <h2 class="video-title">Rick Astley - Never Gonna Give You Up</h2>
+            <button class="close-btn" onclick="closeVideo('video1-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 2 -->
+        <div class="video-window" id="video2-window">
+            <h2 class="video-title">Luis Fonsi - Despacito</h2>
+            <button class="close-btn" onclick="closeVideo('video2-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 3 -->
+        <div class="video-window" id="video3-window">
+            <h2 class="video-title">Ed Sheeran - Shape of You</h2>
+            <button class="close-btn" onclick="closeVideo('video3-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 4 (menor) -->
+        <div class="video-window small-video" id="video4-window">
+            <h2 class="video-title">Ed Sheeran - Perfect</h2>
+            <button class="close-btn" onclick="closeVideo('video4-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/2Vv-BfVoq4g" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 5 (menor) -->
+        <div class="video-window small-video" id="video5-window">
+            <h2 class="video-title">Maroon 5 - Sugar</h2>
+            <button class="close-btn" onclick="closeVideo('video5-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 6 (menor) -->
+        <div class="video-window small-video" id="video6-window">
+            <h2 class="video-title">The Weeknd - Blinding Lights</h2>
+            <button class="close-btn" onclick="closeVideo('video6-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 7 (menor) -->
+        <div class="video-window small-video" id="video7-window">
+            <h2 class="video-title">Imagine Dragons - Believer</h2>
+            <button class="close-btn" onclick="closeVideo('video7-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/0JdgyfbdZG4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Janela do Vídeo 8 (menor) -->
+        <div class="video-window small-video" id="video8-window">
+            <h2 class="video-title">Billie Eilish - Bad Guy</h2>
+            <button class="close-btn" onclick="closeVideo('video8-window')">X</button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
